@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<script>
+		function must(x)
+		{
+			x.style.background="red"
+			
+		}
+		function check(form)
+		{
+			if(form.userid.value == "123" && form.pswrd.value == "King" )
+          {
+           window.open('after_login.html')
+          }
+            else
+          {
+           alert("Error Password or Username")
+           }
+		}
+	</script>
+	<style>
+	.footer
+	{
+		margin-top: 120px;
+		background-color: white;
+	}
+	.logo
+	{
+			background-color:rgba(0,0,0,0.1);
+		background-repeat: no-repeat;
+	}
+	body
+	{
+		background-image: url('../image/log.jpg');
+		background-repeat: no-repeat;
+		background-size: 1600px;
+	}
+		.login
+		{
+			
+			text-align: center;
+			background-color: black;
+            border:solid 5px grey;
+            width:800px;
+            height: 300px;
+            margin-top: 125px;
+            margin-left: 300px;
+		}
+		h1
+		{
+			font-size:30px;
+			font-style: cursive;
+
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+</head>
+<body>
+<div class="logo">
+	<a href="../Home-Page.html"><img style="height: 100px;" src="../image/hms-logo.jpg" alternate="logo for hospital management system"></a>
+</div>
+<ul>
+   <li class="dropdown">
+    <a class="dropbtn">Patient Care and Services</a>
+    <div class="dropdown-content">
+      <a href="./Admission.html">Admission Process</a>
+      <a href="./Discahrge.html">Discharge Process</a>
+  
+      <a href="./Blood.html">Blood Bank</a>
+      
+    </div>
+  <li><a href="./Project-OPD.html">OPD Section</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Specialities</a>
+    <div class="dropdown-content">
+      <a href="./Anaesthesiology.html">Anesthiology</a>
+      <a href="./Cardiology.html">Cardiology</a>
+      <a href="./Dermatology.html">Dermatology</a>
+      <a href="ENT.html">ENT</a>
+     
+    </div>
+  </li>
+  <li><a href="Project_Work--About_Section.html">About Us</a></li>
+ 
+  <li><a href="Contact-Us.html">Contact Us</a></li>
+  <li><a href="Feedback-and-Query.html">Feedback and Query</a></li>
+  <li><a href="Login-Page.html">Log In</a></li>
+</ul>
+<form name="LogIn">
+	<div class="login">
+ 	<h1>Log In</h1><hr><br><br>
+ 	<div class="input">
+ 		 <abbr title="You can have maximum length of 15."><input style="height: 15%; width: 30%; text-align: center;" type="username" name="userid" placeholder="LogIn ID" maxlength="15" onfocus="must(this)" required></abbr><br><br>
+ 	    <abbr title="You can have maximum length of 15."><input style="height: 15%; width: 30%; text-align: center;" type="password" name="pswrd" placeholder="Password" maxlength="15" onfocus="must(this)" required></abbr><br><br>
+ 	</div>
+ 	
+ <input style="height: 13%; width: 15%;" onclick="check(this.form)" type="button" value="LogIn"/>
+ <input style="height: 13%; width: 15%;" type="Reset" value="Reset"/></a><br><br>
+ </div>
+
+</form>
+ 
+ <div class="footer">
+    <center>
+  <summary>Copyright 2022</summary>
+  
+        </center>
+</div>
+</body>
+</html>
